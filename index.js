@@ -12,8 +12,8 @@ app.use(cors());
 app.use(express.json());
 
 // ----- MongoDB Connection -----
-const mongoUri =
-  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/tv-service-shop";
+const mongoUri = "mongodb+srv://manipirama:mani@cluster0.svr0w6i.mongodb.net/tv-service-api";
+  // process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/tv-service-shop";
 
 mongoose
   .connect(mongoUri)
